@@ -7,3 +7,17 @@ query-service/.project
 command-service-0.0.1-SNAPSHOT.jar
 *.zip
 *.jar
+/command-service/.classpath
+/common-dtos/.classpath
+/query-service/.classpath
+/.settings/org.eclipse.core.resources.prefs
+/command-service/.settings/org.eclipse.core.resources.prefs
+/common-dtos/.settings/org.eclipse.core.resources.prefs
+/query-service/.settings/org.eclipse.core.resources.prefs
+/command-service/.settings/org.eclipse.jdt.core.prefs
+/common-dtos/.settings/org.eclipse.jdt.core.prefs
+/query-service/.settings/org.eclipse.jdt.core.prefs
+/.settings/org.eclipse.m2e.core.prefs
+/command-service/.settings/org.eclipse.m2e.core.prefs
+/common-dtos/.settings/org.eclipse.m2e.core.prefs
+/query-service/.settings/org.eclipse.m2e.core.prefs
