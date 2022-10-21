@@ -12,10 +12,10 @@ kafka-server-start.bat D:\{your loc}\kafka_2.12-3.1.0\config\server.properties
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic java
 
 # Produce a message 
-kafka-console-producer.bat --broker-list localhost:9092 --topic java
+kafka-console-producer.bat --broker-list localhost:9092 --topic auction
 
 # Consume a message
-kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic java
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic auction
 
 
 #mongo db 

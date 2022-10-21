@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class ServiceImpl {
+public class SellerService {
     @Autowired
     private KafkaTemplate<String, Object> template;
 

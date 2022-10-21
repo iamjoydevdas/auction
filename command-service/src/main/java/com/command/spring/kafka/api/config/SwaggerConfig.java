@@ -22,6 +22,7 @@ public class SwaggerConfig {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.command.spring.kafka.api"))
                 .paths(regex("/do.*"))
+                .paths(regex("/api/v1/seller.*"))
                 .build();
                 //.apiInfo(metaInfo());
     }

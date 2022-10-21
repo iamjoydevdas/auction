@@ -1,6 +1,6 @@
 package com.command.spring.kafka.api.controller;
 
-import com.command.spring.kafka.api.Service.ServiceImpl;
+import com.command.spring.kafka.api.Service.SellerService;
 import com.commons.Excption.AuctionException;
 import com.commons.dto.Buyer;
 import com.commons.dto.Seller;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class CommandController {
 
     @Autowired
-    private ServiceImpl service;
+    private SellerService service;
 
 
     @PostMapping("/saveProduct")
