@@ -4,22 +4,16 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.annotation.Transient;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Document(collection = "seller")
 public class Seller {
-    @Transient
-    public static final String SEQUENCE_NAME = "users_sequence";
     @Id
-    private Integer id;
+    private String sellerId;
     private UserInfo info;
-    private Product product;
+    private List<Product> products = new ArrayList<>();
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public UserInfo getInfo() {
         return info;
@@ -29,11 +23,19 @@ public class Seller {
         this.info = info;
     }
 
-    public Product getProduct() {
-        return product;
+    public List<Product> getProducts() {
+        return products;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
+    public String getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(String sellerId) {
+        this.sellerId = sellerId;
     }
 }

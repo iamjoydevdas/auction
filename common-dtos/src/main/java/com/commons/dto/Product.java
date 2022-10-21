@@ -4,7 +4,7 @@ package com.commons.dto;
 import java.util.Date;
 
 public class Product {
-    private Integer productId;
+    private String productId;
     private Integer startPrice;
     private String productName;
     private String shortDesc;
@@ -12,11 +12,11 @@ public class Product {
     private String category;
     private Date endDate;
 
-    public Integer getProductId() {
+    public String getProductId() {
         return productId;
     }
 
-    public void setProductId(Integer productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 

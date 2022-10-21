@@ -1,3 +1,4 @@
+/*
 package com.command.spring.kafka.api.controller;
 
 import com.command.spring.kafka.api.Service.SellerService;
@@ -27,3 +28,4 @@ public class CommandController {
         return "bidder data published";
     }
 }
+*/

@@ -21,8 +21,8 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.command.spring.kafka.api"))
-                .paths(regex("/do.*"))
-                .paths(regex("/api/v1/seller.*"))
+              //  .paths(regex("/do.*"))
+                .paths(regex("/api.*"))
                 .build();
                 //.apiInfo(metaInfo());
     }
