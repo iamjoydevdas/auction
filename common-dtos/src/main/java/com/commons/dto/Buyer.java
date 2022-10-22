@@ -7,20 +7,18 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "buyer")
 public class Buyer {
-    @Transient
-    public static final String SEQUENCE_NAME = "users_sequence";
     @Id
-    private Integer id;
+    private String id;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Integer getProductId() {
+   /* public Integer getProductId() {
         return productId;
     }
 
@@ -34,7 +32,7 @@ public class Buyer {
 
     public void setBidAmount(Integer bidAmount) {
         this.bidAmount = bidAmount;
-    }
+    }*/
 
     public UserInfo getInfo() {
         return info;
@@ -44,7 +42,7 @@ public class Buyer {
         this.info = info;
     }
 
-    private Integer productId;
-    private Integer bidAmount;
+//    private Integer productId;
+//    private Integer bidAmount;
     private UserInfo info;
 }

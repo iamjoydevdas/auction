@@ -20,7 +20,7 @@ kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic auction
 
 #mongo db 
 
-mongodb://localhost:27017
+mongodb://localhost:27017  --replSet rs0
 
 #swagger
 http://localhost:9091/swagger-ui.html

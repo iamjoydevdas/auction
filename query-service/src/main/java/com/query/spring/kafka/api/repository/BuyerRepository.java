@@ -8,6 +8,6 @@ import org.springframework.data.mongodb.repository.Query;
 import java.util.List;
 
 public interface BuyerRepository extends MongoRepository<Buyer, Integer>{
-    List<Buyer> findByProductId(Integer productId);
+    //List<Buyer> findByProductId(Integer productId);
 }
 

@@ -43,8 +43,8 @@ public class SellerService {
 
     @Transactional
     public void saveBuyer(Buyer buyer) throws AuctionException {
-        buyer.setId((int) sequenceGeneratorService.generateSequence(Buyer.SEQUENCE_NAME));
-        buyer.getInfo().setId((int) sequenceGeneratorService.generateSequence(Buyer.SEQUENCE_NAME));
+      //  buyer.setId((int) sequenceGeneratorService.generateSequence(Buyer.SEQUENCE_NAME));
+      //  buyer.getInfo().setId((int) sequenceGeneratorService.generateSequence(Buyer.SEQUENCE_NAME));
         buyerRepository.save(buyer);
         template.send(Constants.BID_T, buyer);
     }

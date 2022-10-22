@@ -31,7 +31,7 @@ public class ServiceImpl {
     public MappedProductModel findByProduct(Integer productId) throws AuctionException {
         MappedProductModel obj = new MappedProductModel();
         obj.setSeller(sellerRepository.findByProductId(productId));
-        obj.setBuyer(buyerRepository.findByProductId(productId));
+       // obj.setBuyer(buyerRepository.findByProductId(productId));
         return obj;
     }
 }
