@@ -4,6 +4,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Document(collection = "buyer")
 public class Buyer {
@@ -18,22 +21,6 @@ public class Buyer {
         this.id = id;
     }
 
-   /* public Integer getProductId() {
-        return productId;
-    }
-
-    public void setProductId(Integer productId) {
-        this.productId = productId;
-    }
-
-    public Integer getBidAmount() {
-        return bidAmount;
-    }
-
-    public void setBidAmount(Integer bidAmount) {
-        this.bidAmount = bidAmount;
-    }*/
-
     public UserInfo getInfo() {
         return info;
     }
@@ -42,7 +29,17 @@ public class Buyer {
         this.info = info;
     }
 
-//    private Integer productId;
-//    private Integer bidAmount;
     private UserInfo info;
+
+    public List<BidProduct> getBids() {
+        return bids;
+    }
+
+    public void setBids(List<BidProduct> bids) {
+        this.bids = bids;
+    }
+
+    private List<BidProduct> bids = new ArrayList<>();
+
+
 }

@@ -1,7 +1,9 @@
 package com.commons.dto;
 
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Product {
     private String productId;
@@ -11,6 +13,15 @@ public class Product {
     private String detailDesc;
     private String category;
     private Date endDate;
+
+    private List<BidProduct> bids = new ArrayList<>();
+    public List<BidProduct> getBids() {
+        return bids;
+    }
+
+    public void setBids(List<BidProduct> bids) {
+        this.bids = bids;
+    }
 
     public String getProductId() {
         return productId;

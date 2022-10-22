@@ -5,4 +5,7 @@ public class Constants {
     public static final String  BID_T = "AUCTION-BID";
     public static final String GRP_ID_SELL ="SELL";
     public static final String GRP_ID_BUY ="BUY";
+
+    public static final String PRODUCT = "PRODUCT";
+
 }
